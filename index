@@ -260,7 +260,7 @@
     .xp-mid { background: var(--purple-light); color: var(--purple-dark); }
 
     /* ── GAMIFICATION ── */
-    .game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
     .level-cards { display: flex; flex-direction: column; gap: 10px; }
     .level-card {
       display: flex; gap: 14px; align-items: center;
@@ -296,7 +296,7 @@
     }
 
     /* ── CREW PREP ── */
-    .prep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .prep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
     .prep-card {
       background: var(--white); border-radius: var(--radius-xl);
       padding: 1.75rem; border: 2px solid var(--border); margin-bottom: 1rem;
@@ -515,12 +515,10 @@
   <!-- SAFETY -->
   <section class="section section-grad" id="safety">
     <div class="safety-grid">
-      <div>
-        <div class="reveal">
-          <div class="section-label">🛡️ Built for parents</div>
-          <h2 class="section-headline">You're in control. Always.</h2>
-          <p class="section-sub">Oddly was built with parents as co-pilots from day one. Your kid gets the opportunity — you keep the controls.</p>
-        </div>
+      <div class="reveal">
+        <div class="section-label">🛡️ Built for parents</div>
+        <h2 class="section-headline">You're in control. Always.</h2>
+        <p class="section-sub">Oddly was built with parents as co-pilots from day one. Your kid gets the opportunity — you keep the controls.</p>
         <div class="safety-features">
           <div class="safety-feature reveal">
             <div class="safety-feature-icon">📍</div>
