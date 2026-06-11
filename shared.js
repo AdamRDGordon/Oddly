@@ -27,6 +27,8 @@ const translations = {
     "Launching June 2027. Join the founding list.": "Lansering juni 2027. Gå med i den första listan.",
     "Sign up now for launch updates and priority access when Oddly opens near you. Free to join. Always.": "Anmäl dig nu för lanseringsuppdateringar och prioriterad tillgång när Oddly öppnar nära dig. Alltid gratis att gå med.",
     "No spam. No selling your data. Just useful updates before launch.": "Ingen spam. Vi säljer inte dina uppgifter. Bara användbara uppdateringar inför lanseringen.",
+    "Open menu": "Öppna meny",
+    "Close menu": "Stäng meny",
     "Local jobs for the Oddly Crew": "Lokala jobb för Oddly Crew",
     "Get out there.": "Kom ut.",
     "Earn real money.": "Tjäna riktiga pengar.",
@@ -524,6 +526,33 @@ if (nav && !nav.querySelector(".language-switch")) {
   });
 }
 
+if (nav && !nav.querySelector(".nav-menu-toggle")) {
+  const menuToggle = document.createElement("button");
+  menuToggle.type = "button";
+  menuToggle.className = "nav-menu-toggle";
+  menuToggle.setAttribute("aria-label", "Open menu");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.textContent = "☰";
+  nav.appendChild(menuToggle);
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("menu-open");
+    const isSwedish = document.documentElement.lang === "sv";
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? (isSwedish ? "Stäng meny" : "Close menu") : (isSwedish ? "Öppna meny" : "Open menu"));
+    menuToggle.textContent = isOpen ? "×" : "☰";
+  });
+
+  nav.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", document.documentElement.lang === "sv" ? "Öppna meny" : "Open menu");
+      menuToggle.textContent = "☰";
+    });
+  });
+}
+
 translatePage(localStorage.getItem("oddly-language") || "en");
 
 const reveals = document.querySelectorAll(".reveal");
@@ -554,7 +583,14 @@ languageStyles.textContent = `
   .language-switch{flex:0 0 auto;display:inline-flex;gap:2px;padding:3px;border:1px solid #E8E4F8;border-radius:99px;background:#fff}
   .language-switch button{border:0;border-radius:99px;padding:5px 9px;background:transparent;color:#4A4A6A;font-family:'Nunito',system-ui,sans-serif;font-size:.72rem;font-weight:800;cursor:pointer}
   .language-switch button.active{background:#7B4FD4;color:#fff}
-  @media(max-width:900px){.language-switch{margin-left:auto}}
+  .nav-menu-toggle{display:none;width:42px;height:42px;border:0;border-radius:50%;background:#EDE8FB;color:#1A1A2E;font-size:1.2rem;font-weight:900;cursor:pointer}
+  @media(max-width:900px){
+    .language-switch{margin-left:auto}
+    .nav-menu-toggle{display:inline-grid;place-items:center;flex:0 0 auto}
+    nav .nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:1rem clamp(1.25rem,4vw,4rem) 1.25rem;background:rgba(255,255,255,.98);border-bottom:1px solid #E8E4F8;box-shadow:0 14px 30px rgba(26,26,46,.1);flex-direction:column;align-items:stretch;gap:.2rem;white-space:normal}
+    nav.menu-open .nav-links{display:flex}
+    nav .nav-links a{display:block;padding:.7rem .2rem}
+  }
   @media(max-width:600px){.waitlist-form{flex-direction:column}.waitlist-input,.waitlist-select,.waitlist-form .btn-white{width:100%;flex:none;min-height:50px}}
 `;
 document.head.appendChild(languageStyles);
