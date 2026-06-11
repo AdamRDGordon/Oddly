@@ -1,40 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oddly Academy | Skills, CVs and workshops</title>
-  <meta name="description" content="Oddly Academy helps young people turn local jobs into skills, workshops, events and a useful digital CV." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oddly Academy — Learn, Grow, Lead</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <header class="site-nav">
-    <a class="logo" href="index.html">ODDLY</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="crew.html">Crew</a><a href="parents.html">Parents</a><a href="post-a-job.html">Post a job</a><a href="academy.html" aria-current="page">Academy</a><a href="safety.html">Safety</a>
-    </nav>
-    <a class="button button-primary" href="index.html#waitlist">Join waitlist</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="reveal"><span class="eyebrow">Oddly Academy</span><h1>More than pocket money. A real career starter.</h1><p>Workshops, skill badges, entrepreneur events and an auto-built CV help every completed job become part of a bigger story.</p><div class="hero-actions"><a class="button button-light" href="index.html#waitlist">Join the Academy list</a><a class="button button-ghost" href="crew.html">See Crew levels</a></div></div>
-      <div class="panel reveal"><h2>Digital CV</h2><p>Oddly turns completed work into proof: punctuality, communication, practical skills, repeat clients and feedback badges.</p><ol class="steps"><li><span class="dot">1</span>Job history captured automatically.</li><li><span class="dot">2</span>Skill badges added after real work.</li><li><span class="dot">3</span>Shareable for school, internships and future jobs.</li></ol></div>
-    </section>
-    <section class="section section-white">
-      <div class="section-head reveal"><span class="eyebrow">What Academy includes</span><h2>Useful learning wrapped around real experience.</h2></div>
-      <div class="grid reveal">
-        <article class="card"><div class="card-icon">🏫</div><h3>School workshops</h3><p>Money management, negotiation, first-job confidence and how to pitch for work.</p></article>
-        <article class="card"><div class="card-icon">🎤</div><h3>Entrepreneur days</h3><p>Local events with founders and speakers who make entrepreneurship feel reachable.</p></article>
-        <article class="card"><div class="card-icon">📈</div><h3>Progress tracking</h3><p>Teachers and parents can see growth without turning work into another chore.</p></article>
+  <nav>
+    <a href="index.html" class="nav-logo">ODDLY</a>
+    <ul class="nav-links">
+      <li><a href="crew.html">Oddly Crew</a></li>
+      <li><a href="parents.html">For Parents</a></li>
+      <li><a href="neighbours.html">Neighbours</a></li>
+      <li><a href="academy.html" class="active">Academy</a></li>
+      <li><a href="money.html">Oddly Money</a></li>
+    </ul>
+    <a href="index.html#waitlist" class="nav-cta">Join the Crew 🚀</a>
+  </nav>
+
+  <section class="hero" style="min-height:65vh;">
+    <div class="hero-content">
+      <div class="hero-crew-badge">🎓 Oddly Academy</div>
+      <h1 class="hero-headline">More than<br><span class="highlight">pocket money.</span><br>A career starter.</h1>
+      <p class="hero-sub">Entrepreneurs start early. Oddly Academy gives the Crew the knowledge, events, and connections to build something real — from their very first job.</p>
+      <div class="hero-actions">
+        <a href="index.html#waitlist" class="btn-white">Join the Oddly Crew 🚀</a>
+        <a href="academy.html" class="btn-outline-white">For schools →</a>
       </div>
-    </section>
-    <section class="section section-soft"><div class="section-head reveal"><span class="eyebrow">Skills</span><h2>The practical stuff that compounds.</h2></div><div class="mini-grid reveal"><div class="mini"><b>Communication</b><p>Clear messages before and after jobs.</p></div><div class="mini"><b>Reliability</b><p>Turning up prepared and on time.</p></div><div class="mini"><b>Money basics</b><p>Saving, pricing and understanding value.</p></div><div class="mini"><b>Ownership</b><p>Taking pride in a job well finished.</p></div></div></section>
-  </main>
-  <footer class="footer"><div class="footer-grid"><div><a class="logo" href="index.html">ODDLY</a><p>Every job can teach something.</p></div><div><h4>Platform</h4><a href="crew.html">Crew</a><a href="parents.html">Parents</a></div><div><h4>Trust</h4><a href="safety.html">Safety</a><a href="post-a-job.html">Post a job</a></div><div><h4>Contact</h4><a href="mailto:info@oddly.work">info@oddly.work</a></div></div><div class="footer-bottom"><span>© 2026 Oddly.</span><span>Built for local communities.</span></div></footer>
-  <script src="script.js"></script>
+      <div class="hero-trust">
+        <div class="hero-trust-item">🏫 School workshops</div>
+        <div class="hero-trust-item">🎤 Guest speakers</div>
+        <div class="hero-trust-item">📋 Auto-built CV</div>
+        <div class="hero-trust-item">🎓 PRAO aligned</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="reveal">
+      <div class="section-label">🏫 School partnerships</div>
+      <h2 class="section-headline">Learning that connects to real life.</h2>
+      <p class="section-sub">Oddly Academy brings real-world work and financial education into schools. Not theory. Practical skills the Crew uses immediately.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">💬</div>
+        <div class="how-card-title">In-school workshops</div>
+        <div class="how-card-desc">Sessions on money management, negotiation basics, how to pitch for a job, and how to handle feedback. Run by Oddly educators in partnership with teachers.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">📊</div>
+        <div class="how-card-title">Curriculum tie-ins</div>
+        <div class="how-card-desc">Oddly supports existing work-readiness and school work-experience programmes with practical, trackable activity.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">👩‍🏫</div>
+        <div class="how-card-title">Teacher portal</div>
+        <div class="how-card-desc">Teachers can track student participation, earnings, and skill badges as a real-world project. Oddly becomes part of the classroom — not just something done after school.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="reveal">
+      <div class="section-label">🎤 Events</div>
+      <h2 class="section-headline">Meet people who built something from nothing.</h2>
+      <p class="section-sub">Young Entrepreneur Days, pop-up job fairs, and guest speaker evenings — in your community, with real founders who started where you are.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+        <div class="how-card-icon" style="background:rgba(255,255,255,0.1);font-size:1.6rem;width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">🚀</div>
+        <div class="how-card-title" style="color:white;">Young Entrepreneur Days</div>
+        <div class="how-card-desc" style="color:rgba(255,255,255,0.65);">Half-day community events with guest speakers, peer networking, and real-world entrepreneurship challenges. Earn XP for attending.</div>
+      </div>
+      <div class="how-card reveal" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+        <div class="how-card-icon" style="background:rgba(255,255,255,0.1);font-size:1.6rem;width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">🏪</div>
+        <div class="how-card-title" style="color:white;">Pop-up job fairs</div>
+        <div class="how-card-desc" style="color:rgba(255,255,255,0.65);">Neighbours come to meet the Crew in person and post jobs on the spot. The best way to build trust in a new neighbourhood. Earn XP for every job you land.</div>
+      </div>
+      <div class="how-card reveal" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+        <div class="how-card-icon" style="background:rgba(255,255,255,0.1);font-size:1.6rem;width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">🎤</div>
+        <div class="how-card-title" style="color:white;">Guest speaker evenings</div>
+        <div class="how-card-desc" style="color:rgba(255,255,255,0.65);">Real founders. Real stories. People who started businesses at 16, dropped out of uni, made mistakes, and built something anyway. Because hearing it is different from reading it.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-grad">
+    <div class="reveal">
+      <div class="section-label">📈 The entrepreneur path</div>
+      <h2 class="section-headline">Solo job to micro-business. Step by step.</h2>
+      <p class="section-sub">The Oddly Academy path takes a first-time Crew member all the way to Oddly Alumni — mentoring the next generation of young entrepreneurs.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">🌱</div>
+        <div class="how-card-title">Solo — first jobs</div>
+        <div class="how-card-desc">Start simple. One job at a time. Build your reputation, earn your first badges, and get your first recurring client.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">🤝</div>
+        <div class="how-card-title">Team — bigger jobs</div>
+        <div class="how-card-desc">Senior Crew members can bring in friends for larger jobs. Split the earnings, share the XP, build something together.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">🔁</div>
+        <div class="how-card-title">Recurring — real clients</div>
+        <div class="how-card-desc">Turn one-off jobs into regular bookings. A recurring client is the closest thing to running a real small business — and it looks incredible on a CV.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">🎓</div>
+        <div class="how-card-title">Alumni — give back</div>
+        <div class="how-card-desc">At 18 you become Oddly Alumni. Mentor younger Crew members, speak at events, and help the next wave get started the way you did.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist-section">
+    <div class="waitlist-inner reveal">
+      <h2 class="waitlist-headline">Ready to build something real? 🎓</h2>
+      <p class="waitlist-sub">Join the waitlist. Oddly Academy launches with the app.</p>
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" class="waitlist-input" placeholder="Your email address" required />
+        <select class="waitlist-select"><option value="">I am a…</option><option>Oddly Crew member</option><option>Parent</option><option>School or educator</option></select>
+        <button type="submit" class="btn-white">Join the Crew →</button>
+      </form>
+      <div class="waitlist-success" id="waitlist-success">🎉 You're in! We'll be in touch when Oddly Academy launches near you.</div>
+      <p class="waitlist-note">Free to join. No spam. Ever.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo-text">ODDLY</div><div class="footer-tagline">Real work. Real skills. Real future.<br/>Built for local communities.</div></div>
+      <div class="footer-col"><h4>For you</h4><ul><li><a href="crew.html">Oddly Crew</a></li><li><a href="parents.html">For parents</a></li><li><a href="neighbours.html">Neighbours</a></li><li><a href="money.html">Oddly Money</a></li></ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="academy.html">Oddly Academy</a></li><li><a href="academy.html">For schools</a></li><li><a href="investors.html">Investors</a></li></ul></div>
+      <div class="footer-col"><h4>Oddly</h4><ul><li><a href="mailto:info@oddly.work">info@oddly.work</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Oddly. All rights reserved. oddly.work</div><div class="footer-markets"><span>Built for local communities.</span></div></div>
+  </footer>
+  <script src="shared.js"></script>
 </body>
 </html>

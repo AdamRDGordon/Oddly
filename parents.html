@@ -1,41 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oddly for Parents | Controls, approval and visibility</title>
-  <meta name="description" content="Oddly gives parents approval controls, live job check-ins, hour limits and clear visibility for every local odd job." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Parents — Oddly</title>
+  <meta name="description" content="Oddly puts parents in full control. Live location, employer approval, radius controls, hour limits — you're the co-pilot." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <header class="site-nav">
-    <a class="logo" href="index.html">ODDLY</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="crew.html">Crew</a><a href="parents.html" aria-current="page">Parents</a><a href="post-a-job.html">Post a job</a><a href="academy.html">Academy</a><a href="safety.html">Safety</a>
-    </nav>
-    <a class="button button-primary" href="index.html#waitlist">Join waitlist</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="reveal"><span class="eyebrow">For parents</span><h1>Your kid gets opportunity. You keep the controls.</h1><p>Oddly was designed with parents as co-pilots from day one. Set boundaries, approve employers and follow every job from check-in to completion.</p><div class="hero-actions"><a class="button button-light" href="safety.html">View safety features</a><a class="button button-ghost" href="index.html#waitlist">Join waitlist</a></div></div>
-      <div class="panel reveal"><h2>Parent dashboard</h2><p>Approve new employers, define job categories, set travel radius, limit working hours and receive check-in notifications automatically.</p><ol class="steps"><li><span class="dot">1</span>Approve every employer before job one.</li><li><span class="dot">2</span>Set the distance from home or school.</li><li><span class="dot">3</span>See active job location and completion photos.</li></ol></div>
-    </section>
-    <section class="section section-white">
-      <div class="section-head reveal"><span class="eyebrow">Controls</span><h2>Boundaries that fit your family.</h2></div>
-      <ul class="check-list reveal">
-        <li><span>📍</span><div><b>Approved radius</b><span>Choose how far your child can browse and accept jobs.</span></div></li>
-        <li><span>✅</span><div><b>Employer approval</b><span>View verified profiles, addresses and ratings before approving.</span></div></li>
-        <li><span>⏱️</span><div><b>Hour limits</b><span>Oddly avoids jobs that exceed your daily or weekly limit.</span></div></li>
-        <li><span>💰</span><div><b>Price clarity</b><span>The price is agreed and visible before work begins.</span></div></li>
-      </ul>
-    </section>
-    <section class="section section-soft"><div class="section-head reveal"><span class="eyebrow">The outcome</span><h2>A safer way to let them become capable.</h2><p class="section-lede">Oddly gives young people meaningful responsibility while giving parents the structure needed to say yes more often.</p></div></section>
-  </main>
-  <footer class="footer"><div class="footer-grid"><div><a class="logo" href="index.html">ODDLY</a><p>Parents are co-pilots, not bystanders.</p></div><div><h4>Platform</h4><a href="crew.html">Crew</a><a href="post-a-job.html">Post a job</a></div><div><h4>Trust</h4><a href="safety.html">Safety</a><a href="academy.html">Academy</a></div><div><h4>Contact</h4><a href="mailto:info@oddly.work">info@oddly.work</a></div></div><div class="footer-bottom"><span>© 2026 Oddly.</span><span>Built for local communities.</span></div></footer>
-  <script src="script.js"></script>
+  <nav>
+    <a href="index.html" class="nav-logo">ODDLY</a>
+    <ul class="nav-links">
+      <li><a href="crew.html">Oddly Crew</a></li>
+      <li><a href="parents.html" class="active">For Parents</a></li>
+      <li><a href="neighbours.html">Neighbours</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li><a href="money.html">Oddly Money</a></li>
+    </ul>
+    <a href="index.html#waitlist" class="nav-cta">Join the Crew 🚀</a>
+  </nav>
+
+  <section class="hero" style="min-height:65vh;">
+    <div class="hero-content">
+      <div class="hero-crew-badge">🛡️ For parents</div>
+      <h1 class="hero-headline">You're the<br><span class="highlight">co-pilot.</span><br>Not a bystander.</h1>
+      <p class="hero-sub">Oddly was built with parents in mind from day one. Your child gets a real, safe first work experience. You keep full visibility and control throughout — every job, every time.</p>
+      <div class="hero-actions">
+        <a href="index.html#waitlist" class="btn-white">Get started for free</a>
+        <a href="#faq" class="btn-outline-white">Read the FAQ</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">📍 Live location tracking</div>
+        <div class="hero-trust-item">✅ You approve every employer</div>
+        <div class="hero-trust-item">🔒 Payment secured upfront</div>
+        <div class="hero-trust-item">💬 Feedback filtered first</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THIS IS -->
+  <section class="section section-alt">
+    <div class="reveal">
+      <div class="section-label">💡 What Oddly actually is</div>
+      <h2 class="section-headline">Not a gig platform. A neighbourhood trust network.</h2>
+      <p class="section-sub">Young people have been mowing lawns, walking dogs, and helping neighbours for generations. Oddly doesn't change that relationship — it makes it safer, more transparent, and easier to manage. The relationship stays between your child, you, and the neighbour. Oddly is the trust layer that connects them.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">👨‍👩‍👧</div>
+        <div class="how-card-title">You control the narrative</div>
+        <div class="how-card-desc">You decide who your child works for, how far they can go, how many hours they work, and what jobs they take. Oddly creates the network. You control it.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">🔍</div>
+        <div class="how-card-title">Every neighbour is verified</div>
+        <div class="how-card-desc">Before a neighbour can post a job, they verify their identity and address. You see their profile, community history, and any endorsements from other verified families before approving.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">📈</div>
+        <div class="how-card-title">It's good for them</div>
+        <div class="how-card-desc">Every job builds a real verified CV, teaches money management, and builds confidence. By 18 your child will have years of real work experience — plus savings and financial education built in.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY FEATURES -->
+  <section class="section section-grad" id="safety">
+    <div class="safety-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-label">🛡️ Your controls</div>
+          <h2 class="section-headline">Everything you need to feel confident.</h2>
+          <p class="section-sub">These aren't optional add-ons. Every one of these controls is built into the core of Oddly — because safety isn't a feature, it's the foundation.</p>
+        </div>
+        <div class="safety-features">
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">📍</div>
+            <div><div class="safety-feature-title">Radius control</div><div class="safety-feature-desc">Set the maximum distance from home. Your child only ever sees jobs within that radius. 1 km, 5 km, or custom — your call, changeable anytime.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">✅</div>
+            <div><div class="safety-feature-title">Employer approval</div><div class="safety-feature-desc">Every first job with a new neighbour requires your explicit approval. You see their verified profile, address, community history, and endorsements before deciding. One tap to approve or decline.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">🗺️</div>
+            <div><div class="safety-feature-title">Live location during jobs</div><div class="safety-feature-desc">See exactly where your child is while any job is active. You're notified the moment they arrive and the moment they leave. A quiet check-in ping goes out every 30 minutes on longer jobs.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">🆘</div>
+            <div><div class="safety-feature-title">"Need Help" support button</div><div class="safety-feature-desc">Every active job has a discreet support button. If your child taps it — "I'm uncomfortable", "Something isn't right", "Please contact me" — you get an immediate notification and their location. The job can be paused instantly.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">🔒</div>
+            <div><div class="safety-feature-title">Payment Secured</div><div class="safety-feature-desc">Neighbours pay before the job starts. Funds are held securely and only released when the job is confirmed complete. You see the agreed price before approving any job. No surprises, no awkward money conversations.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">⏱️</div>
+            <div><div class="safety-feature-title">Hour limits</div><div class="safety-feature-desc">Set maximum hours per day and per week. The app won't schedule jobs that push past your limits — and the AI planner builds your child's day around them automatically.</div></div>
+          </div>
+          <div class="safety-feature reveal">
+            <div class="safety-feature-icon">💬</div>
+            <div><div class="safety-feature-title">Feedback filtered first</div><div class="safety-feature-desc">All neighbour feedback is reviewed by Oddly before your child sees it. Harsh or unfair reviews are rewritten into developmental language. We always have their back — and so do you.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="safety-aside">
+          <div class="safety-aside-title">The first job is always the most controlled.</div>
+          <div class="safety-aside-desc">Every time your child works with a new neighbour for the first time, the full approval process applies. Once you've approved them and a few jobs have gone well, they become a Trusted Neighbour — and the process gets smoother without sacrificing safety.</div>
+          <div class="safety-stat"><div class="safety-stat-icon">🛡️</div><div class="safety-stat-text">You approve every new employer before job one — no exceptions</div></div>
+          <div class="safety-stat"><div class="safety-stat-icon">📸</div><div class="safety-stat-text">Completion photos submitted at end of every job — timestamped and stored for both sides</div></div>
+          <div class="safety-stat"><div class="safety-stat-icon">🔔</div><div class="safety-stat-text">Arrive notification. Leave notification. Every job. Every time.</div></div>
+          <div class="safety-stat"><div class="safety-stat-icon">💰</div><div class="safety-stat-text">Payment only releases after you — or auto-confirm after 24 hours — confirm the job is done</div></div>
+          <div class="safety-stat"><div class="safety-stat-icon">👁️</div><div class="safety-stat-text">Co-manage your child's saving goals — see what they're working toward and how they're tracking</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOUR KID GETS -->
+  <section class="section section-alt">
+    <div class="reveal">
+      <div class="section-label">📈 What your child gets</div>
+      <h2 class="section-headline">More than pocket money. A head start.</h2>
+      <p class="section-sub">Every job builds something real. By the time your child turns 18 they'll have a verified work history, financial skills, and a CV that no school certificate can match.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">📋</div>
+        <div class="how-card-title">A verified digital CV</div>
+        <div class="how-card-desc">Every job is logged automatically — date, type, duration, and verified feedback. Real evidence of reliability. Shareable for school applications and future employers.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">💰</div>
+        <div class="how-card-title">Real financial skills</div>
+        <div class="how-card-desc">Oddly Money teaches budgeting, saving goals, compound interest, and investing — through short modules woven into the app. You can see their progress and co-manage saving goals.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">💪</div>
+        <div class="how-card-title">Confidence and responsibility</div>
+        <div class="how-card-desc">Showing up, doing a job well, getting paid, and building a reputation teaches more than any classroom can. Encouraging feedback and XP keep them motivated without pressure.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-grad" id="faq">
+    <div class="reveal">
+      <div class="section-label">❓ FAQ</div>
+      <h2 class="section-headline">Questions parents ask us.</h2>
+    </div>
+    <div style="max-width:720px;" class="reveal">
+      <div class="faq-item">
+        <div class="faq-q">What age can my child join?</div>
+        <div class="faq-a">The Oddly Crew is open to young people aged 13–17. Every account requires a linked parent or guardian account — your child cannot join without you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if something goes wrong during a job?</div>
+        <div class="faq-a">Your child has a "Need Help" button on every active job. Tapping it immediately notifies you with their location and lets them pause the job. You can contact them or the neighbour directly through the app.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I know the neighbour is safe?</div>
+        <div class="faq-a">Every neighbour verifies their identity and address before posting a job. You see their full profile — including community years, completed jobs hosted, and endorsements from other verified families — before approving. You can decline any employer, any time, for any reason.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What jobs are allowed?</div>
+        <div class="faq-a">Jobs are limited to outdoor and community-facing tasks — lawn mowing, dog walking, car washing, garden tidying, grocery carrying, snow clearing, and similar. No indoor unsupervised jobs at launch.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How does payment work?</div>
+        <div class="faq-a">The neighbour pays upfront before the job starts. Funds are held securely by Oddly and released to your child only when the job is confirmed complete. You see the agreed price before approving. Your child always receives 100% of the agreed amount.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens to negative feedback?</div>
+        <div class="faq-a">All feedback is reviewed by Oddly before your child sees it. Harsh or unfair reviews are rewritten into constructive, developmental language. There are no star ratings. Your child will never see a crushing review — only encouragement and specific things to improve.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is Oddly free?</div>
+        <div class="faq-a">Yes — free to join for the Oddly Crew and parents. Neighbours pay a small 5% platform fee on top of the agreed job price. Your child always receives the full agreed amount.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist-section">
+    <div class="waitlist-inner reveal">
+      <h2 class="waitlist-headline">Give your child a real head start. 🛡️</h2>
+      <p class="waitlist-sub">Join the waitlist and we'll let you know when Oddly is ready near you.</p>
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" class="waitlist-input" placeholder="Your email address" required />
+        <button type="submit" class="btn-white">I'm a parent — join waitlist →</button>
+      </form>
+      <div class="waitlist-success" id="waitlist-success">🎉 You're on the list! We'll be in touch when Oddly is ready near you.</div>
+      <p class="waitlist-note">No spam. No selling your data.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo-text">ODDLY</div><div class="footer-tagline">Real work. Real skills. Real future.<br/>Built for local communities.</div></div>
+      <div class="footer-col"><h4>For you</h4><ul><li><a href="crew.html">Oddly Crew</a></li><li><a href="parents.html">For parents</a></li><li><a href="neighbours.html">Neighbours</a></li><li><a href="money.html">Oddly Money</a></li></ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="academy.html">Oddly Academy</a></li><li><a href="academy.html">For schools</a></li><li><a href="investors.html">Investors</a></li></ul></div>
+      <div class="footer-col"><h4>Oddly</h4><ul><li><a href="mailto:info@oddly.work">info@oddly.work</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Oddly. All rights reserved. oddly.work</div><div class="footer-markets"><span>Built for local communities.</span></div></div>
+  </footer>
+  <script src="shared.js"></script>
 </body>
 </html>

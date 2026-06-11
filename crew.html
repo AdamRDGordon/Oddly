@@ -1,52 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oddly Crew | Earn, level up and build skills</title>
-  <meta name="description" content="Join the Oddly Crew to find local jobs, earn money, build confidence and level up with every completed task." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For the Oddly Crew — Oddly</title>
+  <meta name="description" content="Join the Oddly Crew. Find local jobs, earn real money, level up your skills, and build your future — starting today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
 </head>
 <body>
-  <header class="site-nav">
-    <a class="logo" href="index.html">ODDLY</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="crew.html" aria-current="page">Crew</a><a href="parents.html">Parents</a><a href="post-a-job.html">Post a job</a><a href="academy.html">Academy</a><a href="safety.html">Safety</a>
-    </nav>
-    <a class="button button-primary" href="index.html#waitlist">Join the Crew</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-  </header>
-  <main>
-    <section class="hero">
+  <nav>
+    <a href="index.html" class="nav-logo">ODDLY</a>
+    <ul class="nav-links">
+      <li><a href="crew.html" class="active">Oddly Crew</a></li>
+      <li><a href="parents.html">For Parents</a></li>
+      <li><a href="neighbours.html">Neighbours</a></li>
+      <li><a href="academy.html">Academy</a></li>
+      <li><a href="money.html">Oddly Money</a></li>
+    </ul>
+    <a href="index.html#waitlist" class="nav-cta">Join the Crew 🚀</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height:70vh;">
+    <div class="hero-content">
+      <div class="hero-crew-badge">🚀 For the Oddly Crew</div>
+      <h1 class="hero-headline">Your neighbourhood.<br><span class="highlight">Your first pay cheque.</span><br>Your move.</h1>
+      <p class="hero-sub">The Oddly Crew finds real jobs nearby, earns real money, and builds a real CV — all while levelling up like a game. No experience needed. Just show up and give it everything.</p>
+      <div class="hero-actions">
+        <a href="index.html#waitlist" class="btn-white">Join the Oddly Crew 🚀</a>
+        <a href="money.html" class="btn-outline-white">See Oddly Money 💰</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">🎮 Earn XP with every job</div>
+        <div class="hero-trust-item">📈 Build a real CV</div>
+        <div class="hero-trust-item">💰 Get paid securely</div>
+        <div class="hero-trust-item">✅ Free to join</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO JOIN -->
+  <section class="section section-alt">
+    <div class="reveal">
+      <div class="section-label">⚡ Getting started</div>
+      <h2 class="section-headline">From sign-up to first pay cheque in five steps.</h2>
+      <p class="section-sub">The whole thing takes about 10 minutes to set up. Then you're in the Crew.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">📱</div>
+        <div class="how-card-title">1. Download and sign up</div>
+        <div class="how-card-desc">Create your Oddly Crew profile — your name, a photo, and what jobs you're up for. Takes 5 minutes. Your avatar starts at Rookie Crew. 🌱</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">👨‍👩‍👧</div>
+        <div class="how-card-title">2. Get your parent on board</div>
+        <div class="how-card-desc">Invite your parent to link their account. They set your radius and hour limits. Once they're in, you're cleared for jobs. This is what makes Oddly work — they've got your back.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">🔍</div>
+        <div class="how-card-title">3. Browse jobs near you</div>
+        <div class="how-card-desc">See real jobs posted by verified neighbours in your area. Lawn mowing, dog walking, car washing — filtered to what you can actually get to. Your parent approves the first job with each neighbour.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">🤝</div>
+        <div class="how-card-title">4. Agree on a fair price</div>
+        <div class="how-card-desc">The app suggests a fair range based on the job size and local data. You can negotiate — and Oddly helps you do it confidently. Price is locked before you start. Payment is already secured.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">🏆</div>
+        <div class="how-card-title">5. Do the job, get paid, level up</div>
+        <div class="how-card-desc">Check in when you arrive. Do a great job. Submit your completion photo. Get paid instantly when confirmed. Earn XP, build your CV, and watch your avatar grow.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOBS -->
+  <section class="section section-grad">
+    <div class="reveal">
+      <div class="section-label">💼 Jobs you can do</div>
+      <h2 class="section-headline">Real jobs. Real earnings. No experience needed.</h2>
+      <p class="section-sub">These are the kinds of jobs posted by verified neighbours near you. Every job earns money AND XP toward your next level.</p>
+    </div>
+    <div class="jobs-grid reveal">
+      <div class="job-card"><div class="job-card-emoji">🌿</div><div class="job-card-name">Lawn mowing</div><div class="job-card-range">kr 150–250 · $25–40</div><span class="job-card-xp xp-low">+50 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">🐕</div><div class="job-card-name">Dog walking</div><div class="job-card-range">kr 80–120 · $15–20</div><span class="job-card-xp xp-low">+30 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">🚗</div><div class="job-card-name">Car washing</div><div class="job-card-range">kr 150–200 · $25–35</div><span class="job-card-xp xp-mid">+45 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">🛒</div><div class="job-card-name">Grocery carrying</div><div class="job-card-range">kr 60–100 · $10–15</div><span class="job-card-xp xp-low">+20 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">🍂</div><div class="job-card-name">Garden tidying</div><div class="job-card-range">kr 120–180 · $20–30</div><span class="job-card-xp xp-mid">+40 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">❄️</div><div class="job-card-name">Snow clearing</div><div class="job-card-range">kr 100–150 · $15–25</div><span class="job-card-xp xp-low">+35 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">🐾</div><div class="job-card-name">Pet sitting</div><div class="job-card-range">kr 150–250 · $25–40</div><span class="job-card-xp xp-mid">+60 XP</span></div>
+      <div class="job-card"><div class="job-card-emoji">📦</div><div class="job-card-name">Moving help</div><div class="job-card-range">kr 150–200 · $25–35</div><span class="job-card-xp xp-mid">+55 XP</span></div>
+    </div>
+    <p class="reveal" style="font-size:0.85rem;color:var(--ink-faint);max-width:560px;">Prices are never fixed — they're negotiated fairly. The app helps you understand what's reasonable based on job size and local history. You always get 100% of the agreed amount.</p>
+  </section>
+
+  <!-- XP & LEVELS -->
+  <section class="section section-dark">
+    <div class="game-grid">
       <div class="reveal">
-        <span class="eyebrow">For the Oddly Crew</span>
-        <h1>Earn near home and turn effort into progress.</h1>
-        <p>Find parent-approved local jobs, prepare properly, check in safely, get paid fairly and build a record you can use later.</p>
-        <div class="hero-actions"><a class="button button-light" href="index.html#waitlist">Join the Crew</a><a class="button button-ghost" href="parents.html">Show my parents</a></div>
+        <div class="section-label">🎮 Level up</div>
+        <h2 class="section-headline">The more you do, the more you become.</h2>
+        <p class="section-sub">Every job earns XP. Every education module earns XP. Every challenge completed earns XP. Watch your avatar grow from Rookie to Crew Captain.</p>
+        <div class="level-cards">
+          <div class="level-card"><div class="level-card-avatar">🌱</div><div><div class="level-card-name">Rookie Crew</div><div class="level-card-desc">Just getting started — first jobs, building trust</div></div><div class="level-card-jobs">0–199 XP</div></div>
+          <div class="level-card"><div class="level-card-avatar">⚡</div><div><div class="level-card-name">Oddly Crew</div><div class="level-card-desc">Proven — bigger jobs, recurring clients</div></div><div class="level-card-jobs">200–499 XP</div></div>
+          <div class="level-card"><div class="level-card-avatar">🔥</div><div><div class="level-card-name">Senior Crew</div><div class="level-card-desc">Top performer — team jobs, priority matching</div></div><div class="level-card-jobs">500–999 XP</div></div>
+          <div class="level-card"><div class="level-card-avatar">👑</div><div><div class="level-card-name">Crew Captain</div><div class="level-card-desc">Community leader — mentor, featured profile</div></div><div class="level-card-jobs">1000+ XP</div></div>
+          <div class="level-card"><div class="level-card-avatar">🎓</div><div><div class="level-card-name">Oddly Alumni</div><div class="level-card-desc">18+ — investor, mentor, ambassador</div></div><div class="level-card-jobs">Forever</div></div>
+        </div>
       </div>
-      <div class="app-visual reveal"><div class="phone"><div class="phone-top"><div class="phone-brand">Level 3</div><div class="phone-meta">Oddly Crew · 680 XP</div><div class="xp"><span></span></div></div><div class="phone-card"><h3>Challenges</h3><div class="job-row"><span>🔥</span><div><strong>On a roll</strong><small>3 great jobs this week</small></div><span class="pay">+150 XP</span></div><div class="job-row"><span>🤝</span><div><strong>Squad goals</strong><small>Team job completed</small></div><span class="pay">+100 XP</span></div></div><div class="phone-card"><h3>Profile badges</h3><p>Reliable · On time · Great communicator · Garden ready</p></div></div></div>
-    </section>
-    <section class="section section-white">
-      <div class="section-head reveal"><span class="eyebrow">How you grow</span><h2>Five levels from first job to community leader.</h2></div>
-      <div class="grid reveal">
-        <article class="card"><div class="card-icon">🌱</div><h3>Rookie Crew</h3><p>Start with simple jobs while you build confidence and reviews.</p><span class="tag">0-199 XP</span></article>
-        <article class="card"><div class="card-icon">⚡</div><h3>Oddly Crew</h3><p>Unlock repeat clients, bigger tasks and better job matching.</p><span class="tag">200-499 XP</span></article>
-        <article class="card"><div class="card-icon">🔥</div><h3>Senior Crew</h3><p>Take on higher trust jobs and team tasks with other Crew members.</p><span class="tag">500-999 XP</span></article>
-        <article class="card"><div class="card-icon">👑</div><h3>Crew Captain</h3><p>Become a community role model and mentor newer Crew members.</p><span class="tag">1000+ XP</span></article>
-        <article class="card"><div class="card-icon">🎓</div><h3>Oddly Alumni</h3><p>After 18, return as a mentor, speaker or brand ambassador.</p><span class="tag">Forever</span></article>
+      <div class="reveal">
+        <p class="section-sub" style="margin-bottom:1.5rem;">Challenges keep things interesting. Hidden achievements reward going the extra mile.</p>
+        <div class="challenge-showcase">
+          <div class="challenge-card"><div class="challenge-icon">🔥</div><div><div class="challenge-title">On a roll</div><div class="challenge-desc">3 jobs this week with Outstanding feedback</div></div><div class="challenge-reward">+150 XP</div></div>
+          <div class="challenge-card"><div class="challenge-icon">⚡</div><div><div class="challenge-title">Daily hustle</div><div class="challenge-desc">Complete 2 jobs in one day</div></div><div class="challenge-reward">+75 XP</div></div>
+          <div class="challenge-card"><div class="challenge-icon">🌧️</div><div><div class="challenge-title">Hardcore Crew</div><div class="challenge-desc">Hidden — complete a job in rough weather</div></div><div class="challenge-reward">+120 XP</div></div>
+          <div class="challenge-card"><div class="challenge-icon">💰</div><div><div class="challenge-title">Money Smart</div><div class="challenge-desc">Complete your first savings goal</div></div><div class="challenge-reward">+100 XP</div></div>
+          <div class="challenge-card"><div class="challenge-icon">🏆</div><div><div class="challenge-title">Neighbourhood legend</div><div class="challenge-desc">Top earner in your area this month</div></div><div class="challenge-reward">+200 XP</div></div>
+        </div>
       </div>
-    </section>
-    <section class="section section-soft">
-      <div class="split">
-        <div class="reveal"><span class="eyebrow">Before every job</span><h2>Know what to bring and what to do.</h2><p class="section-lede">Oddly sends job prep the night before, including tools, timing, map context and practical tips.</p></div>
-        <div class="card reveal"><h3>Tomorrow: lawn mow at Bjorkvagen 4</h3><ol class="steps"><li><span class="dot">1</span>Charge or fuel the mower before you go.</li><li><span class="dot">2</span>Start with edges for a cleaner finish.</li><li><span class="dot">3</span>Send a completion photo before check-out.</li></ol></div>
+    </div>
+  </section>
+
+  <!-- PRE JOB PREP -->
+  <section class="section section-alt">
+    <div class="prep-grid">
+      <div class="reveal">
+        <div class="section-label">🗺️ Smart job prep</div>
+        <h2 class="section-headline">Know before you go.</h2>
+        <p class="section-sub">The night before every job, Oddly sends you everything you need. Tips, estimated size from satellite view, tools to bring, and what to expect. No surprises.</p>
+        <div class="prep-card">
+          <div class="prep-card-header"><div class="prep-card-icon">🌿</div><div class="prep-card-title">Tomorrow: Lawn mow at Björkvägen 4</div></div>
+          <div class="map-preview"><div class="map-pin">📍</div><div class="map-label">~380 sqm · Est. 1.5 hrs · kr 200</div></div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div>Start with the edges first — makes the finish look much cleaner</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div>Mow in straight overlapping lines — you'll see the difference</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div>Check for obstacles before you start the mower</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div>Take a before photo as soon as you arrive</div>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="footer-grid"><div><a class="logo" href="index.html">ODDLY</a><p>Real work. Real skills. Real Crew.</p></div><div><h4>Platform</h4><a href="parents.html">Parents</a><a href="post-a-job.html">Post a job</a></div><div><h4>Trust</h4><a href="safety.html">Safety</a><a href="academy.html">Academy</a></div><div><h4>Contact</h4><a href="mailto:info@oddly.work">info@oddly.work</a></div></div><div class="footer-bottom"><span>© 2026 Oddly.</span><span>Built for local communities.</span></div></footer>
-  <script src="script.js"></script>
+      <div class="reveal">
+        <div class="section-label">📅 AI daily planner</div>
+        <h2 class="section-headline" style="font-size:clamp(1.5rem,2.5vw,2.2rem);">Stack your day. Maximise your earnings.</h2>
+        <p class="section-sub">Taking multiple jobs in one day? Oddly plans your route, clusters jobs that need the same tools, builds in travel time, and makes sure you're home on time.</p>
+        <div class="prep-card">
+          <div class="prep-card-header"><div class="prep-card-icon">⚡</div><div class="prep-card-title">Today's plan · 4 jobs · kr 680</div></div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div><strong>09:00</strong> — Lawn mow · Björkvägen 4 · kr 200</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div><strong>11:00</strong> — Dog walk · Solvägen 12 · kr 120</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div><strong>12:15</strong> — Car wash · Tallgatan 8 · kr 180</div>
+          <div class="prep-tip"><div class="prep-tip-dot"></div><strong>14:00</strong> — Grocery carry · Ekvägen 2 · kr 80</div>
+          <div style="margin-top:12px;padding-top:12px;border-top:2px solid var(--border);font-size:0.78rem;color:var(--ink-faint);font-family:var(--sans);font-weight:700;">Home by 14:45 · Within your hour limit ✅</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV & BADGES -->
+  <section class="section section-grad">
+    <div class="reveal">
+      <div class="section-label">📋 Your digital CV</div>
+      <h2 class="section-headline">Every job builds your future.</h2>
+      <p class="section-sub">Every completed job is added to your Oddly CV automatically. By the time you're 18 you'll have a verified work history that no school certificate can match.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-purple">📋</div>
+        <div class="how-card-title">Verified work history</div>
+        <div class="how-card-desc">Every job is logged with the date, type, duration, and verified feedback. It's real evidence of reliability — not just a rating out of 5.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-teal">🏅</div>
+        <div class="how-card-title">Skill badges</div>
+        <div class="how-card-desc">Earn badges like Reliable, Punctual, 10 Jobs Done, Top Earner, Money Smart, and Investor Mindset. Each one reflects something real you've done.</div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-card-icon icon-yellow">🔗</div>
+        <div class="how-card-title">Shareable profile</div>
+        <div class="how-card-desc">Share your Oddly profile with schools, part-time job applications, and future employers. It's proof you've already been working — while others haven't.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MONEY TEASER -->
+  <section class="section section-dark">
+    <div style="max-width:700px;margin:0 auto;text-align:center;" class="reveal">
+      <div class="section-label" style="justify-content:center;">💰 Oddly Money</div>
+      <h2 class="section-headline" style="max-width:100%;text-align:center;">Earning is just the start.</h2>
+      <p class="section-sub" style="max-width:100%;text-align:center;">Set saving goals. Learn about money. And when you turn 18, use Oddly to make your first investment — built on years of real earnings history.</p>
+      <a href="money.html" class="btn-white" style="margin:0 auto;display:inline-flex;">Explore Oddly Money 💰</a>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="waitlist-section" id="waitlist">
+    <div class="waitlist-inner reveal">
+      <h2 class="waitlist-headline">Ready to join the Oddly Crew? 🚀</h2>
+      <p class="waitlist-sub">Get on the list. We'll let you know the moment Oddly is ready near you.</p>
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" class="waitlist-input" placeholder="Your email address" required />
+        <select class="waitlist-select"><option value="">I am a…</option><option value="crew">Oddly Crew member</option><option value="parent">Parent</option></select>
+        <button type="submit" class="btn-white">Join the Crew →</button>
+      </form>
+      <div class="waitlist-success" id="waitlist-success">🎉 You're in the Crew! We'll be in touch when Oddly is ready near you.</div>
+      <p class="waitlist-note">Free to join. No spam. Ever.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo-text">ODDLY</div><div class="footer-tagline">Real work. Real skills. Real future.<br/>Built for local communities.</div></div>
+      <div class="footer-col"><h4>For you</h4><ul><li><a href="crew.html">Oddly Crew</a></li><li><a href="parents.html">For parents</a></li><li><a href="neighbours.html">Neighbours</a></li><li><a href="money.html">Oddly Money</a></li></ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="academy.html">Oddly Academy</a></li><li><a href="academy.html">For schools</a></li><li><a href="investors.html">Investors</a></li></ul></div>
+      <div class="footer-col"><h4>Oddly</h4><ul><li><a href="mailto:info@oddly.work">info@oddly.work</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Oddly. All rights reserved. oddly.work</div><div class="footer-markets"><span>Built for local communities.</span></div></div>
+  </footer>
+  <script src="shared.js"></script>
 </body>
 </html>
